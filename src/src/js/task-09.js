@@ -23,4 +23,4 @@ function onClick (event) {
   // console.log('Випадковий колір:', someColor);
   //виводимо у спан цей випадковий колір
   console.log(span.textContent = someColor); 
-}ж
+}
