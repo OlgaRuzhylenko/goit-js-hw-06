@@ -1,5 +1,3 @@
-// const counter = document.querySelector('.counter');
-// console.dir(counter);
 
 const value = document.querySelector('#value')
 console.dir(value);
