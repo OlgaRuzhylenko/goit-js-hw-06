@@ -3,24 +3,22 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-//достукуємося до всіх елементів
+
 const container = document.querySelector('.widget');
 console.dir(container);
 const button = document.querySelector('.change-color');
 console.dir(button);
 const span = document.querySelector('.color');
 console.dir(span);
+const body = document.querySelector('body')
 
-//додажмо до кнопки слухача подій
 button.addEventListener('click', onClick);
 
-
 function onClick (event) {
-  //викликаємо функцію рандомного кольору і присвоюємо у змінну
+
   const someColor = getRandomHexColor();
-  //додаємо цей колір на контейнер
-  container.style.backgroundColor = someColor;
-  // console.log('Випадковий колір:', someColor);
-  //виводимо у спан цей випадковий колір
+
+  body.style.backgroundColor = someColor;
+
   console.log(span.textContent = someColor); 
 }
